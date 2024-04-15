@@ -1,0 +1,302 @@
+/* Reset */
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.hanken-grotesk-<uniquifier> {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* add body background color 12.04.2024 */
+body {
+    background: #ECF2FF;
+}
+
+/* 375 px */
+
+.result-summary {
+    max-width: 735px;
+}
+
+
+.result {
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 32px 32px;   
+}
+
+
+
+.result h2 {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    color: #CAC9FF;
+}
+
+.result .point {
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(63, 33, 201, 0.641249) 35.88%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    padding: 25px 39px 22px 38px;
+    margin-top: 24px;
+}
+
+.result .point .big {
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    line-height: 72px;
+}
+
+.result .point .small {
+    display: inline-block;
+    opacity: 0.5168;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 700;
+    max-height: 5px;
+    color: #CAC9FF;
+}
+
+.result .details {
+    margin: 24px 0;
+    color: #FFFFFF;
+    text-align: center;
+    width: 260px;
+}
+
+.result .details h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 31.27px;
+    color: white;
+}
+
+.result .details p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20.85px;
+    text-align: center;
+    color: #CAC9FF;
+}
+    /* add color white 12.04.2024 */
+.summary {
+    padding: 24px 30px 30px;
+    background: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.summary h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 23.45px;
+    text-align: left;
+    color: #303B59;
+}
+
+.summary .wrapper {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.summary .wrapper .common {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 16px 18px;
+    border-radius: 12px;
+    
+}
+
+.summary .wrapper .common p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 20.85px;
+    text-align: right;
+    color: #303B59;
+}
+.summary .wrapper .common span {
+    opacity: 0.5;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20.85px;
+    gap: 12px;    
+}
+
+
+
+.reaction {
+    color: #FF5555;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.95) 100%
+    ),
+    #FF5555;
+    
+}
+
+
+
+.memory {
+    color: #FFB21E;
+    background: linear-gradient(
+        0deg, 
+        rgba(255, 255, 255, 0.95) 0%, 
+        rgba(255, 255, 255, 0.95) 100%
+        ),
+        #FFB21E;    
+}
+
+.verbal {
+    color: #00BB8F;
+    background: linear-gradient(
+        0deg, 
+        rgba(255, 255, 255, 0.95) 0%, 
+        rgba(255, 255, 255, 0.95) 100%
+        ),
+        #00BB8F;
+
+}
+
+.visual {
+    color: #1125D6;
+    background: linear-gradient(
+        0deg, 
+        rgba(255, 255, 255, 0.95) 0%, 
+        rgba(255, 255, 255, 0.95) 100%
+        ),
+        #1125D6;
+}
+
+/* button design */
+
+
+
+button {
+    width: 100%;
+    height: 56px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 23.45px;
+    background-color: #303B59;
+    border-radius: 128px;
+    color: #FFFFFF;
+    padding: 17px 0 16px;
+    border: none;
+}
+
+@media(min-width: 1440px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .result-summary {
+        display: flex;
+        background-color: white;
+        width: 736px;
+    }
+
+    .result-summary, .result, .summary {
+        border-radius: 32px;
+        width: 736px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .result h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 31.27px;
+        text-align: left;
+        
+    }
+
+    .result .point {
+        height: 200px;
+        width:200px;
+        justify-content: center;
+        align-items: center;
+        padding: 55px 60px 46px 59px;
+    }
+
+    .result .point .big {
+        font-size: 7.2rem;
+        font-weight: 800;
+        line-height: 72px;
+        text-align: center;
+        
+    }
+
+    .result .point .small {
+        
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 23.45px;
+        text-align: left;
+
+    }
+
+    .summary h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 31.27px;
+        text-align: left;
+    }
+
+    .result .details h3 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 41.7px;
+        text-align: center;
+    }
+    .result .details p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 23.45px;
+        text-align: center;
+    }
+
+    button:hover {
+        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    }
+}
+
