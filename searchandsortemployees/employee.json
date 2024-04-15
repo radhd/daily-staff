@@ -1,0 +1,58 @@
+{
+    "employees" : [
+        {
+            "firstName": "John",
+            "lastName": "Johnson",
+            "position": "Manager",
+            "separationDate": "2016-12-31"
+        },
+        {
+            "firstName": "Tou",
+            "lastName": "Michaelson",
+            "position": "District Manager",
+            "separationDate": "2015-12-19"
+        },
+        {
+            "firstName": "Jake",
+            "lastName": "Jacobson",
+            "position": "Programmer",
+            "separationDate": null
+        },
+        {
+          "firstName": "Jacquelyn",
+          "lastName": "Jackson",
+          "position": "DBA",
+          "separationDate": null
+        },
+        {
+          "firstName": "Sally",
+          "lastName": "Weber",
+          "position": "Web Developer",
+          "separationDate": "2015-12-18"
+        },
+        {
+          "firstName": "Mark",
+          "lastName": "Smith",
+          "position": "Project Manager",
+          "separationDate": "2017-06-30"
+        },
+        {
+          "firstName": "Emily",
+          "lastName": "Jones",
+          "position": "Graphic Designer",
+          "separationDate": null
+        },
+        {
+          "firstName": "David",
+          "lastName": "Brown",
+          "position": "Systems Analyst",
+          "separationDate": "2018-03-15"
+        },
+        {
+          "firstName": "Jessica",
+          "lastName": "Davis",
+          "position": "Network Engineer",
+          "separationDate": "2019-02-28"
+        }
+    ]
+}
