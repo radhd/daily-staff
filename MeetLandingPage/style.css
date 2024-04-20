@@ -1,0 +1,63 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900
+
+.red-hat-display-<uniquifier> {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0 54px;
+
+}
+
+/* works but not responsive */
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 165px;
+}
+
+.hero-image img {
+    position: absolute;
+    left: -25px;
+    right: -25px;
+    width: calc(100% + 50px);
+    height: auto;
+}
+
+.line-shape .line {
+    width: 1px;
+    height: 84px;
+    background-color: #87879D;
+    margin: 0 auto;
+}
+
+.line-shape .round {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #87879D;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.line-shape .number-in-shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
