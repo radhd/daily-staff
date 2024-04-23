@@ -25,6 +25,7 @@ nav {
     padding: 48px 0 54px;
 }
 
+/* CONSTRAINT CSS-s */
 .wrapper {
     padding: 0 24px;
 }
@@ -33,12 +34,16 @@ nav {
     padding-bottom: 64px;
 }
 
+.flex {
+    text-align: center;
+}
+
 /* works but not responsive */
 .hero-image {
     width: 100%;
     overflow: hidden;
     position: relative;
-    height: 165px;
+    min-height: 165px;
     margin-bottom: 48px;
 }
 
@@ -50,31 +55,7 @@ nav {
     height: auto;
 }
 
-
-
-.line-shape .line {
-    width: 1px;
-    height: 84px;
-    background-color: #87879D;
-    margin: 0 auto;
-}
-
-.line-shape .round {
-    width: 56px;
-    height: 56px;
-    border: 1px solid #87879D;
-    margin: 0 auto;
-    border-radius: 50%;
-}
-
-.line-shape .number-in-shape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-size: 2rem;
-}
+/* main title designs */
 
 .main-title h1 {
     font-size: 4rem;
@@ -93,10 +74,35 @@ nav {
 }
 
 
+/* LINE WITH SHAPE */
 
-.flex {
-    text-align: center;
+.line-shape .line {
+    width: 1px;
+    height: 84px;
+    background-color: #87879D;
+    margin: 0 auto;
 }
+
+.line-shape .round {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #87879D;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.line-shape .number-in-shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+}
+
+
+
 /* buttons design */
 .buttons {
     display: flex;
@@ -158,4 +164,184 @@ nav {
     font-weight: 900;
     line-height: 36px;
     padding: 24px 0 32px;
+}
+
+/* FOOTER */
+
+.footer-bg {
+    background-image: url('materials/mobile/image-footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.bg-color {
+    background-color: rgba(77, 150, 169, 89.55%);
+    
+}
+
+.footer {
+    position: relative;
+    padding-top: 144px;
+}
+
+.footer .title-h2 {
+    padding-top: 64px;
+}
+
+.line-absolute {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 100%;
+}
+
+/* MOBILE DONE */
+
+/* Tablet starts 768PX */
+
+@media(min-width: 768px) {
+
+    /* image */
+    .hero-image {
+        min-height: 358px;
+    }
+
+    /* main title tablet */
+    .main-title {
+        padding: 72px 156px 80px 155px;
+    }
+
+    .main-title h1 {
+        font-size: 4.8rem;
+        line-height: 48px;
+    }
+
+    /* buttons design  */
+
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Image container */
+
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0 39px 48px 40px;
+    }
+    
+    /* MODERN USE */
+    
+    .title-h2 {
+        font-size: 4.0rem;
+        line-height: 44px;
+        text-align: center;
+        padding: 24px 0 32px;
+    } 
+
+    /* Footer */
+    .title-h2 {
+        font-size: 4rem;
+        line-height: 44px;
+        text-align: center;
+        padding: 0 120px 32px;
+    }
+
+    .style-p {
+        padding: 0 97px 40px 98px;
+    }
+}
+
+
+/* PC 1440 px */
+
+@media(min-width: 1440px) { 
+    .hero-image img {
+        display: none;
+    }
+
+    .main-title {
+        padding: 0;
+    }
+
+    .buttons.pad-bot {
+        padding: 0;
+    }
+
+    .header-hero-image {
+        background-image: url('materials/desktop/image-hero-left.png'), url('materials/desktop/image-hero-right.png');
+        background-repeat: no-repeat;
+        background-position: left, right;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    
+    .main-title.wrapper.flex {
+        padding: 108px 88px 117px; 
+    }
+
+    .main-title h1 {
+        font-size: 6.4rem;
+        line-height: 64px;
+    }
+
+    .main-title p {
+        font-size: 1.8rem;
+        line-height: 26px;
+    }
+
+    /* Image */
+
+    .grid-container.wrapper.pad-bot {
+        padding: 0 165px 80px;
+        gap: 30px;
+    }
+
+    /* Modern use */
+
+    .wrapper.pad-bot.flex {
+        padding: 0 450px;
+    }
+
+    .green-h3 {
+        font-family: Red Hat Display;
+        font-size: 1.6rem;
+        line-height: 26px;
+        letter-spacing: 4px;
+        padding-bottom: 16px;
+    }
+
+    .title-h2 {
+        font-size: 4rem;
+        line-height: 44px;
+        text-align: center;
+        padding: 0 0 32px;
+    }
+
+    .style-p {
+        font-size: 1.8rem;
+        line-height: 26px;
+        padding: 0 0 72px;
+    }
+
+    /* footer */
+
+    .footer-bg {
+        background-image: url("materials/desktop/image-footer.jpg");
+        background-size: cover;
+        background-position: top;
+        height: 308px;
+    }
+    
+    .bg-color {
+        height: 100%;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: baseline;
+    }
 }
