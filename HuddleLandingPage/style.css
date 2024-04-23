@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;    
+}
+
+/* ===== TYPOGRARPHY ===== */
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+  
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+  
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+  
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+  
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+  
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+  
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #00252E;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800 */
+
+/* .open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+.open-sans-400 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #00252E;
+}
+
+.open-sans-700 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #00252E;
+}
+
+/* ========== Header ============ */
+
+.logo-wrapper {
+    padding: 24px;
+}
+
+.logo {
+    width: 96px;
+    height: 16px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav button {
+    width: 80px;
+    height: 23.53px;
+    border: 0.59px solid #FF52C1;
+    box-shadow: 0px 0px 5px 0px #FF52C138;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #FF52C1;
+}
+
+/* MAIN  */
+
+.community {
+    padding: 160px 40px 120px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.community h1 {
+    font-size: 2.4rem;
+    color: #00252E;
+    margin-bottom: 24px;
+}
+.community p {
+    font-size: 1.4rem;
+    color: #808E9A;
+    margin-bottom: 48px;
+}
+
+.community button {
+    margin-bottom: 104px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #FF52C1;
+    box-shadow: 0px 3px 7px 0px #00252E39;
+    border-radius: 30px;
+    border:none;
+    font-size: 1.2rem;
+}
+
+.community img {
+    width: 100%;
+}
+
+/* DIAGRAM */
+
+.diagram {
+    display: flex;
+    flex-direction: column;
+    padding: 0 108px;
+    gap: 88px;
+}
+
+.diagram span {
+    font-size: 6.1rem;
+}
+
+.diagram p {
+    font-size: 1.524rem;
+}
+
+/* section grow together */
+
+
+.grow-image-container-top {
+    background-image: url('assets/mobile/bg-section-top-mobile-1.svg');
+    height: 110px;
+}
+
+.middle-image img {
+    width: 100%;
+    background-color: #F6FBFF;
+}
+
+.section-texts {
+    background-image: url('assets/mobile/bg-section-bottom-mobile-1.svg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 55%;
+    height: 400px;
+    text-align: center;
+    margin-top: -3px;
+}
+
+
+
+.section-texts h2 {
+    padding: 40px 0 16px;
+}
+
+.section-texts p {
+    padding: 0 26px;
+}
